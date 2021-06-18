@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /* --animate-repeat: 2; */
+  /* width : -webkit-fill-available; */
 }
 
 .App-logo {
@@ -14,8 +15,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,6 +29,12 @@
   color: #61dafb;
 }
 
+.App-div {
+  width: 100vw;
+  /* height: auto; */
+  min-height: 95vh;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +42,82 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.doi-logo {
+  /* width : 1; */
+  /* width : -webkit-fill-available;
+  height: fit-content; */
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  /* text-align: center; */
+  width: inherit;
+  height: auto;
+  position: absolute;
+  z-index: 9;
+  /* margin: 0 0.5rem; */
+  max-width: 100%;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.doi-particle {
+  /* width : -webkit-fill-available;
+  height: fit-content; */
+  width: inherit;
+  height: auto;
+  max-width: 100%;
+  position: absolute;
+  z-index: 3;
+  animation: flash; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.doi-line {
+  /* width : -webkit-fill-available;
+  height: fit-content; */
+  width: inherit;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.doi-bg {
+  /* width : -webkit-fill-available;
+  height: fit-content; */
+  width: inherit;
+  max-width: 100%;
+  height: auto;
+  max-width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.p-menubar-root-list{
+  margin-left: 37vw !important;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+img{  
+  /* max-height: 100%;   */
+  /* max-width: 100%;  */
+  /* position: absolute;    */
+  top: 0;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  margin: auto;
 }
