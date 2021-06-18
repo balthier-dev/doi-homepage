@@ -38,7 +38,7 @@ export class Header extends Component {
         return (
             <div>
                 <div className="card">
-                    <Menubar style={{width : "100vw"}} model={this.items} start={start} end={end} />
+                    <Menubar style={{width : "100vw", 'position': 'relative','z-index':'999'}} model={this.items} start={start} end={end} />
                 </div>
             </div>
         );
